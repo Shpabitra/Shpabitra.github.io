@@ -1,0 +1,26 @@
+h1 {
+    color: blueviolet;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: inherit;
+    font-weight: 600;
+    forced-color-adjust: rgb(70, 70, 165);
+    text-align: inherit, center;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+   color: red;
+   flex-grow: inherit;
+   flex-direction: inherit;
+   font-style: italic;
+    
+}
+footer{
+    text-align: center;
+    color: blueviolet;
+}
+
+

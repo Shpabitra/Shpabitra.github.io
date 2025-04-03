@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home page</title>
+<link rel="stylesheet" href="style.css">
+<Style>
+/*styling body section*/
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(173, 194, 98);
+margin: 0;
+padding: 0;
+      }
+/*styling Nav bar section*/
+.navbar img {
+width: 50px;
+height: 20px;
+margin-bottom: 20px;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+align-items: center;
+font-weight: bolder;
+}
+
+.nav-links a {
+color: rgb(77, 6, 6);
+text-decoration: none;
+font-size: 20px;
+font-style: italic;
+padding: 8px 12px;
+display: -webkit-inline-box;
+}
+
+/* layout */
+.image-box {
+ margin: 30px auto;
+ text-align: center;
+ background-color: rgb(201, 176, 176);
+ }
+
+.image-box img{
+ width: 1200px;
+height: 300px;
+border-radius: 10px;
+transition: transform 0.5s ease;
+
+}
+             
+.image-box img:hover{
+transform: scale(1.05);
+}
+.description-text {
+margin-top: 20px;
+font-size: 18px;
+align-content: space-around;
+color: blue;
+font-weight: bold;
+font-style: inherit;
+}
+.gallery {
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+display: flex;
+}
+.gallery-item {
+width: 300px;
+text-align: center;
+}
+.gallery-item img {
+width: 100%;
+display: block;
+border-radius: 8px;
+transition: transform 0.5s ease;
+}
+.gallery-item img:hover{
+transform: scale(1.05);
+}
+   /* Caption style*/ 
+.gallery-item .Caption {
+text-align: center;
+font-size: 14px;
+margin-top: 6px;
+color: #0c0ccf;
+}
+/*explore activity */
+.aside {
+text-align: center;
+margin: 30px 0;
+}
+.btn {
+display: inline-block;
+padding: 12px 24px;
+background-color: black;
+color: white;
+text-decoration: none;
+border-radius: 8px;
+font-size: 18px;
+font-weight: bold;
+}        
+</Style>
+
+</head>
+    
+<body>
+<!--logo and navigation bar-->
+      
+<div class="navbar">
+<img src="images/logo.png" alt="logo">
+        
+<div class="nav-links">
+<!--Navigation Links-->
+<a href="homepage.html">Home</a>
+<a  href="activities.html">Activity </a>
+<a  href="booking.html">Booking</a>
+<a  href="package.html">Packages</a>
+<a  href="Contact.html">Contact</a>  
+</div>
+</div>
+      
+<h1> Welcome to the Adventure Holiday in France</h1>
+<!--main image section-->
+<div class="image-box">
+<img src="images/Paragliding.jpg" alt="Adventure In France">
+          
+<div class="description-text">
+ Here at Adventure Holidays, were proud to do things a little differently to other tour
+operators. As part of the Altai Travel Family, we operate all of our trips personally And 
+take complete ownership of your adventure from begining to end.
+<br>
+We're Passionate about adventure travel and committed to providing the best possible
+experiences in the world's most outstanding locations. We realised that the key to this is setting up and running our adventure operations directly
+in more than 30 countries in every corner of the world. Thhis approach alows us to ensure the highest level of safety and quality in everythig we do. our meticulous teams in the UK and across
+our distinations  worldwide can focus on perfecting their knowledge of the beautiful locaitons we sell and 
+creating authentic experiences for you to enjoy.
+            
+</div>
+</div>
+<!--navigation button to activities-->
+<aside><a href="activities.html" class="btn">Explore Activities</a></aside>
+<!--Rock Climbing image and discription-->
+<div class="gallery">
+<div class="gallery-item">
+<img src="images/rockclimbing.jpg" alt="Rock climbing">
+<div class="caption"><strong>Rock Climbing :</strong> climbing in the mont-Blanc and the Chamonix valley means compact rock, high mountains, superb granite and miles of gnesis. 
+Mountain routes may be equipped. guide book are essential. A climbing instrutor is a great way to learn or tackle challenging routes.</div>
+                
+</div>
+<!--Base jumping image and discription-->
+<div class="gallery-item">
+<img src="images/basejumping.jpg" alt="Base Jumping">
+<div class="caption"><strong>Base Jumping:</strong> Discover the most beautiful places in France.</div> 
+</div>    
+<!--saililng image and discription-->
+<div class="gallery-item">
+<img src="images/sailing.jpg" alt="Sailing">
+<div class="caption"><strong> Sailing:</strong>sailing in Atlantic ocean is an adventurous dream to saillors.</div>
+</div>          
+</div>
+<!--footer section-->
+<footer>
+ Adventure Holidays 2025
+</footer>
+
+</body>
+    
+</html>

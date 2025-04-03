@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking and Prices</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/*styling body section*/
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+color: blue;
+background-color: rgb(203, 196, 172);
+margin: 0cm;
+padding: 0;
+box-sizing: content-box;
+border-radius: 4px;
+}
+/*styling Navbar section*/
+.navbar img {
+width: 50px;
+height: 20px;
+margin-bottom: 20px;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+align-items: center;
+font-weight: bolder;
+}
+
+.nav-links a {
+color: rgb(77, 6, 6);
+text-decoration: none;
+font-size: 20px;
+font-style: italic;
+padding: 8px 12px;
+display: -webkit-inline-box;
+}
+/*styling form section*/
+.container {
+max-width: 600px;
+width: 40%;
+margin: 40px auto;
+background-color: aquamarine;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+.header h1{
+text-align: center;
+color: #2c3e50;
+}
+.booking {
+background-color: goldenrod;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 10px;
+width: 100%;
+min-width: 400px;
+}
+.booking h2 {
+color: aquamarine;
+text-align: center;
+margin-bottom: 20px;
+}
+form label {
+display: block;
+margin: 12px 0 6px;
+font-weight: bold;
+}
+form input[ type="text"],
+form select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+button[type="Submit"]{
+background-color: blue;
+text-decoration: solid;
+align-items: center;
+width: 100%;
+border-radius: 7px;
+}
+button[type="Submit"]:hover{
+background-color: rgb(98, 126, 13);
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: 2px;          
+}
+/* /*styling images, buttons and contents section*/
+.container {
+display: flex;
+}
+.gallery-item {
+display: flex;
+align-self: flex-start;
+margin: 20px;
+max-width: 800px;
+background-color: aqua;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.gallery-content {
+flex: 1;
+}
+.gallery-item img {
+width: 400px;
+height: 250px;
+margin-right: 5px;
+object-fit: cover;
+border-radius: 8px;
+} 
+.gallery-content.h3 {
+color: rgb(15, 25, 214);
+font-size: 20px;
+font-weight: bolder;
+font-style: oblique;
+text-align: right;
+}
+.gallery-content p {
+margin: 5px 0;
+color:rgb(22, 61, 234);
+font-size: 20px;
+font-family: fantasy;
+font-weight: lighter;
+text-align: right;
+}
+.gallery-item .price {
+font-size: 16px;
+font-weight: bold;
+color: #c6494d;
+margin-top: 10px;
+}
+.gallery-item a{
+display: inline-block;
+margin-top: 5px;
+margin-bottom: 50px;
+color: blueviolet;
+text-decoration: underline;
+}
+.book-button {
+background-color: rgb(134, 13, 13);
+padding: 10px 16px;
+border-radius: 5px;
+font-weight: bold;
+display: inline-block;
+margin-top: 10px;
+color: white;
+}
+.book-button:hover{
+color: aquamarine;
+background-color: #c6494d;
+}
+</style>
+</head>
+<body>
+<!--Navbar section-->
+<div class="navbar">
+<img src="images/logo.png" alt="logo">
+<div class="nav-links">
+<a href="homepage.html">Home</a>
+<a  href="activities.html">Activity </a>
+<a  href="booking.html">Booking</a>
+<a  href="package.html">Packages</a>
+<a  href="Contact.html">Contact</a>  
+</div>
+</div>
+<!--header section-->
+<div class="container">
+<div class="header">
+<h1>Adventurous Activities In France</h1>
+</div>
+<!--booking form section starts here-->
+<div class="booking">
+<h2>Book your adventure</h2>
+<form action="#" method="get">
+<label for="fname"> First Name</label>
+<input type="text" id="fname" name="firstname" placeholder="First Name.." required> <br>
+<label for="lname">Last name</label>
+<input type="text" id="lname" name="lastname" placeholder="Last Name.." required> <br>
+<label for="activity"> Activity</label>
+<br>
+<select id="activity" name="activity">
+<option value="Rock Climbiing"> Rock Climbing </option>
+<option value="Sailing" > sailing</option>
+<option value="Base Jumping"> Base Jumping</option>
+<option value="Paragliding">Paragliding</option>
+</select> <br>
+<!--button-->
+<button type="submit">submit</button>       
+</form>
+</div>
+</div>
+<!--form section ends here-->
+
+<!--image section with caption, price and book button starts here-->
+<div class="gallery">
+<!--Rock climbing-->
+<div class="gallery-item">
+<img src="images/rockclimbing4.jpg" alt="Rock Climbing">
+<div class="gallery-content">
+<h3>Rock Climbing</h3>
+<p>Challenge yourself by climbing the toughest rocks in the region, suitable for all experience leveles including over 8 years old.</p>
+
+</div><div class="price">Price:£300
+<br><a href="booking.html" class="book-button">Book Now </a> 
+</div>
+</div>
+
+<!--sailing-->
+<div class="gallery-item">
+<img src="images/sailing.jpg" alt="sailing">
+<div class="gallery-content">
+<h3>Sailing</h3>
+<p> Experience the thrill of the open water with professional guidance and breathtaking views</p>
+
+</div>
+<div class="price">Price:£300
+<br><a href="booking.html" class="book-button">Book Now </a> 
+</div>
+</div>
+
+<!--Paragliding-->
+<div class="gallery-item">
+<img src="images/paragliding3.jpg" alt="Paragliding">
+<div class="gallery-content">
+<h3>Paragliding</h3>
+<p>Soar through the skies and take in the stunning views of mountains and valleys.</p>
+</div>
+<div class="price">Price:£250
+<br><a href="booking.html" class="book-button">Book Now </a> 
+</div>
+</div>
+
+<!--Base Jumping-->
+<div class="gallery-item">
+<img src="images/basejumping.jpg" alt="base Jumping">
+<div class="gallery-content">
+<h3> Base Jumping</h3>
+<p>For aderenaline lovers! Jump from breathtaking heights and experience the ultimate rush.</p>
+</div>
+<div class="price">Price:£400
+<br><a href="booking.html" class="book-button">Book Now </a> 
+</div>
+</div>
+</div>
+<!--image, caption, price and button section ends here-->
+   
+    
+    <footer>Adventure In France 2025
+
+    </footer>
+    
+</body>
+</html>

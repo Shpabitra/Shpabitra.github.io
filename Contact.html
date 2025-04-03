@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/*styling body section*/    
+body {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: blueviolet;
+margin: 0;
+padding: 0;
+background-color: rgb(128, 202, 166);
+}
+/*styling Nav bar section*/
+.navbar img {
+width: 50px;
+height: 20px;
+margin-bottom: 20px;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+align-items: center;
+font-weight: bolder;
+}
+
+.nav-links a {
+color: rgb(77, 6, 6);
+text-decoration: none;
+font-size: 20px;
+font-style: italic;
+padding: 8px 12px;
+display: -webkit-inline-box;
+}
+/*styling Video*/
+.youtube-video {
+    border:none;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* main content section*/
+.container{
+width: 50%;
+margin: 20px auto;
+}
+.container h2{
+color: rgb(13, 55, 224);
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+font-size: 28px;
+}
+.container h3{
+color: blue;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+font-size: 25px;
+}
+/* contact form section*/
+.form {
+background-color: gold;
+padding: 30px;
+border-radius: 10px;
+width: 100%;
+max-width: 600px;
+margin: 40px auto;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+border: 1px slateblue;
+}
+/* h3*/
+.form h3 {
+text-align: center;
+color: black;
+margin-bottom: 20px;
+font-size: 18px;
+}
+.form label {
+display: block;
+margin-top: 15px;
+margin-bottom: 5px;
+font-weight: bold;
+color: brown;
+}
+/*Input and test area styling*/
+.form input[type="text"],
+.contact-form[type="email"],
+.form textarea,
+.form select {
+width: 100%;
+padding: 10px;
+font-size: 18px;
+border: 2px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+/* submit button*/
+.form button [type="submit"]{
+margin-top: 20px;
+background-color: blue;
+color: aliceblue;
+border: none;
+padding: 12px 20px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+.form button:hover {
+background-color: rgb(134, 42, 9);
+}
+/*styling FAQ section starts here*/
+.accordion h2{
+color: blue;
+font-size: 30px;
+}
+.accordion h3{
+color: blue;
+font-size: 25px;
+}
+.accordion {
+max-width: 600px;
+background-color: bisque;
+margin: 20px auto;
+font-family: Arial, Helvetica, sans-serif;
+}
+.accordion-button {
+width: 100%;
+padding: 15px;
+font-size: 16px;
+text-align: left;
+border: none;
+outline: none;
+background-color: #f1f6;
+border-bottom: 2px solid #ccc;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.accordion-button:hover {
+background-color: #e6f0f2;
+}
+.accordion-content {
+min-height: 0;
+overflow: hidden;
+background-color: #ffffff;
+transition: max-height 0.3s ease;
+padding: 0 15px;
+}
+.accordion-content p {
+margin: 15px 0;
+}
+.accordion-button.active {
+background-color: #d1e7ec;
+}
+/*styling Faq section ends here*/
+/*styling social media section starts here*/
+.social-media h2 {
+color: rgb(17, 28, 243);
+margin-bottom: 15px;
+}
+.social-media a img {
+margin: 0 10px;
+width: 30px;
+height: 30px;
+transition: tramsform 0.2s ease;
+}
+.social-media a img:hover {
+transform: scale(2.2);
+}
+</style>
+
+</head>
+<body>
+
+<!--logo on the top of the page-->
+<!--Navbar start-->
+<div class="navbar">
+<img src="images/logo.png" alt="logo">
+<div class="nav-links">
+<a href="homepage.html">Home</a>
+<a  href="activities.html">Activity </a>
+<a  href="booking.html">Booking</a>
+<a  href="package.html">Packages</a>
+<a  href="Contact.html">Contact</a>  
+</div>
+</div>
+<!--head section starts here-->
+<div class="container">
+<div class="header">
+<h2>Start your adventure here</h2>
+</div>
+<!--travel guide section-->
+<div class="header">
+<h3> Travel Guide</h3>
+</div>
+<!--Embeded video src from youtube -->        
+<iframe 
+class="youtube-video"
+ width="560"
+  height="315" 
+  src="https://www.youtube.com/embed/QhVP5iwzOd4"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+ allowfullscreen>
+</iframe>
+<!--Middle part for location-->
+<!--contact form section-->
+<div class="contact form">
+<h2> Contact Us</h2>
+</div>
+<div class="form">
+<h3>Contact Form</h3>
+<form action="submit_form.php" method="POST">
+
+<label for="name"> FULL Name</label>
+<input type="text" id="name" name="name" placeholder="Full Name." required> 
+
+<label for="email"> Email</label>
+<input type="email" id="email" name="email" placeholder="Email" required> 
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4" required></textarea>
+
+<label for="enquiry-type">Enquiry Type</label>
+<!--option for enquiry-->
+<select id="enquiry-type" name="enquiry-type">
+<option value="general">General</option>
+<option value="booking">Booking</option>
+<option value="support">Support</option>
+</select>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+
+<!--Contact section ends here-->
+<!--Faq section starts here-->
+<div class="accordion">
+<h2>FAQ Section:</h2><br><h3>common questions answered</h3>
+<div class="accordion-item">
+<button class="accordion-button">What meal are included in your holiday package?</button>
+<div class="accordion-content">
+<p>A continental breakfast, wholesome French Lunch and Good Quality evening meal with reasonable amount of wine, cider and beer provied in the evening.</p>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button">How are the adventure activities instructed?</button>
+<div class="accordion-content">
+<p>All adventure activities are provided by English speaking instructor, who is experienced and qualified certificaiton with all the activities. that means you and your families are in safe hands.</p>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button">What should I bring?</button>
+<div class="accordion-content">
+<p>Comfortable Clothing and Proper footwear.</p>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button">Is it safe?</button>
+<div class="accordion-content">
+<p>yes, all activities are guided by professionals.</p>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button">Do I need insurance for the adventure activities?</button>
+<div class="accordion-content">
+<p>Travel insurance is not included in the price of our holidays and so it is a condition of our 
+booking terms that you have adequate insurance to cover all activities.</p>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button">How does Brexit affect travel to France?</button>
+<div class="accordion-content">
+<p>Travel to France is little different noe we've left the EU and its easy to get caught out. we'vesummarised all the relavent information you need to know about EHICs, password validity and driving in France so that you are in the loop. </p>
+</div>
+</div>
+</div>
+<!--Faq section ends here-->
+<!--Social Media Section-->
+<div class="social-media">
+<h2>Follow Us on:</h2>
+<a href="https://facebook.com" target="_blank">
+<img src="images/facebook.png" alt="facebook logo" width="20"> 
+</a>
+<a href="http://twitter.com" target="_blank">
+<img src="images/twitter.png" alt="twitter Logo" width="20">
+</a>
+<a href="http://instagram.com" target="_blank">
+<img src="images/instagram.jpg" alt="Instagram Logo" width="20">
+</a>
+<a href="http://youtube.com" target="_blank">
+<img src="images/youtube.png" alt="youtube Logo" width="20"> 
+</a>
+</div>
+<footer>Adventure holiday 2025</footer>
+    
+</body>
+</html>

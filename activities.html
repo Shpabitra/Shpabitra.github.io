@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=A, initial-scale=1.0">
+    <title>Activities & Safety</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/*styling body section*/
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(167, 167, 161);
+margin: 0;
+padding: 0;
+}
+ /*styling Nav bar section*/
+.navbar img {
+width: 50px;
+height: 20px;
+margin-bottom: 20px;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+align-items: center;
+font-weight: bolder;
+}
+.nav-links a {
+color: rgb(77, 6, 6);
+text-decoration: none;
+font-size: 20px;
+font-style: italic;
+padding: 8px 12px;
+display: -webkit-inline-box;
+}
+/* video styling*/
+.video-box{
+width: 800px;
+height: 600px;
+align-items: center;
+}
+/*styling images and content*/
+.image-box {
+margin: 30px auto;
+text-align: center;
+}
+.image-box img{
+width: 100%;
+border-radius: 10px;
+}
+description-text {
+margin-top: 8px;
+font-size: 15px;
+color: blue;
+}
+/*individual Image */ 
+.gallery {
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+display: flex;
+}
+.gallery-item {
+width: 300px;
+text-align: center;
+}
+.gallery-item img {
+width: 100%;
+display: block;
+border-radius: 8px;
+}
+/* Caption style*/ 
+.Caption {
+text-align: center;
+font-size: 14px;
+margin-top: 6px;
+color: #d8d511;
+}
+.box {
+border: 2px; 
+padding: 20px;
+margin: 20px;
+width: auto;
+background-color: rgb(169, 63, 169);
+border-radius: 20px;
+box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.box h2 {
+color: rgb(215, 16, 16);
+}
+.box a{
+color: rgb(230, 230, 240);
+text-decoration: underline;
+}
+.activity {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10px;
+padding: 8px 12px;
+border-radius: 6px;
+}
+/*styling button*/
+.book-button {
+background-color: blue;
+color: rgb(227, 236, 244);
+padding: 6px 12px;
+font-weight: bold;
+}
+.book-button a {
+text-align: center;
+font-size: medium;
+}
+.book-button:hover {
+background-color: chartreuse;
+}
+</style>
+    
+</head>
+
+<body>
+<!--logo on the top of the page-->
+<!--Navbar starts-->
+<div class="navbar">
+<img src="images/logo.png" alt="logo">
+        
+<div class="nav-links">
+<a href="homepage.html">Home</a>
+<a  href="activities.html">Activity </a>
+<a  href="booking.html">Booking</a>
+<a  href="package.html">Packages</a>
+<a  href="Contact.html">Contact</a>  
+</div>
+</div>
+<!--nav bar ends here-->
+<!--main contant starts -->
+<div class="safety-banner">
+<h2><strong>Safety First:</strong>Before starting your adventure, please follow all safety instructions provided by your instructor.</h2>
+</div>
+<!--video mp4-->    
+<div class="video-box">  
+<iframe title="autoplay" src="https://player.vimeo.com/video/253784098?h=57629ebe58" width="800" height="600"  allowfullscreen></iframe>
+</div>
+
+<!--Middle part for location-->
+<!--images and caption wrap-->
+<div class="gallery">
+<div class="gallery-item">
+<img src="images/mountblanc.jpg" alt="Mount Blanc">
+<div class="caption"><h2> Explore the stunning Mount Blanc and other top adventure in France</h2>
+</div>
+</div>
+    
+<div class="gallery-item">
+<img src="images/Map.jpg" alt="image of the Map">
+<div class="caption"><h2>A place to be the part of the adventure</h2>
+</div>
+</div>
+       
+<div class="gallery-item">
+<img src="images/paragliding1.jpg" alt="Paragliding">
+<div class="caption"><h2>Marvel at the stunning views of Le Brevent and Chamonixfrom the air and experience
+the spectacular scenery. </h2>
+</div>
+</div>
+
+<!--Safety Rules-->
+<div class="box">
+<h2>Our Activities and Safety Rules</h2>
+<a href="https://asc360.com/travel-stories/adventure-sports-safety-tips/">learn more about the safety rules</a>
+<ul>
+<li> Follow the instructor's guidline,</li>
+<li> Wear proper safety equipment</li>
+<li>Do not engage in activities under the influence of alchol.</li>
+</ul>
+</div>
+<!--activities booking navigation button -->
+<div class="box">
+<h2> Available Activities</h2>
+<div class="activity">
+<span>Rock Climbing</span> 
+<a href="booking.html" class="book-button">Book Now </a> 
+</div>
+<div class="activity">             
+<span>Sailing</span> 
+<a href="booking.html" class="book-button">Book Now </a>
+</div>
+<div class="activity">
+<span>Base Jumping</span>
+<a href="booking.html" class="book-button">Book Now </a>
+</div>
+<div class="activity">
+<span>Paragliding</span>
+<a href="booking.html" class="book-button">Book Now </a>
+</div>
+</div>
+</div>
+    
+<footer>Adventure holiday 2025
+
+</footer>
+    
+</body>
+</html>

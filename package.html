@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages and testimonials</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/*styling body section*/
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(193, 215, 150);
+margin: 0;
+padding: 0;
+}
+/*styling Navbar section*/
+.navbar img {
+width: 50px;
+height: 20px;
+margin-bottom: 20px;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+align-items: center;
+font-weight: bolder;
+}
+.nav-links a {
+color: rgb(77, 6, 6);
+text-decoration: none;
+font-size: 20px;
+font-style: italic;
+padding: 8px 12px;
+display: -webkit-inline-box;
+}
+/* styling packages image, contents price and discounts section starts here */
+.package {
+max-width: 600px;
+margin: 30px;
+padding: 25px;
+background-color: aqua;
+border: 2px solid #cce5ff;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+align-items: inherit;
+}
+.package h2{
+color: red;
+font-weight: bold;
+}
+.package ul{
+padding-block: 8px;
+}
+.package li{
+margin-bottom: 10px;
+font-size: 18px;
+line-height: 1.8;
+color: #333;
+}
+/*individual Image */ 
+.gallery-item {
+display: flex;
+align-items: flex-start;
+margin: 30px;
+max-width: 900px;
+background-color: rgb(222, 161, 198);
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.gallery-content {
+flex: 1;
+}
+.gallery-item img {
+width: 300px;
+height: 400px;
+margin-right: 20px;
+border-radius: 8px;
+object-fit: cover;
+}
+.gallery-item h3{
+text-align: left;
+color: rgb(58, 3, 3);
+font-size: 16px;
+font-weight: bold;
+}
+.gallery-content h3{
+font-size: 24px;
+color: #003366;
+margin-bottom: 10px;
+}
+.gallery-content p {
+margin-bottom: 10px;
+color: blue;
+}
+.gallery-item ul {
+padding-left: 20px;
+line-height: 1.6;
+color: #444;
+}
+.gallery-item li {
+font-size: 16px;
+color: blue;
+margin-top: 15px;
+}
+.gallery-content .price {
+font-size: 18px;
+font-weight: bold;
+color: #3f0507;
+}
+.discount {
+color: rgb(56, 8, 8);
+font-weight: bold;
+font-size: 20px;
+}
+.book-button {
+background-color: blue;
+color: white;
+padding: 10px 16px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+display: inline-block;
+margin-top: 10px;
+}
+.book-button:hover{
+background-color: #006600;
+color: yellow;
+}
+/*styling testimonial section*/
+.testimonials-container {
+display: flex;
+justify-content: flex-end;
+margin: 20px;
+}
+.testimonials-box{
+border: 2px solid;
+padding: 15px;
+width: 300px;
+background-color: aquamarine;
+
+}
+.rating {
+color: crimson;
+font-size: 20px;
+}
+</style>
+
+</head>
+<body>
+<!--logo on the top of the page-->
+<!--Navbar start-->
+<!--logo and navigation bar-->
+<div class="navbar">
+<img src="images/logo.png" alt="logo">
+<div class="nav-links">
+<a href="homepage.html">Home</a>
+<a  href="activities.html">Activity </a>
+<a  href="booking.html">Booking</a>
+<a  href="package.html">Packages</a>
+<a  href="Contact.html">Contact</a>  
+</div>
+</div>
+<!--main body part for packages-->
+<header>
+<h1> Adventure Packages</h1>
+</header>
+<section>
+<!-- discount packages-->
+<div class="package">        
+<h2> Our Best Discount Package Includes</h2>
+<ul><!--list of packages starts here-->
+<li>All meal onboard with French Cuisine influence</li>
+<li>Cabin accoomodation with heating</li>
+<li> Use of cold-weather gear(parkas, boots)</li>
+<li>Daily excursions on land and by Zodiac</li>
+<li>Insurance and safety equipment</li>
+<li>Optional return flight from Ushuaia, Argentina to france </li>  
+</ul><!--list of packages ends here-->
+</div>
+<!--images of activities, content, price and discount -->
+<div class="gallery">
+<div class="gallery-item">
+<h3>Climbing</h3> <br>
+<img src="images/rockclimbing4.jpg" alt="Rock climbing">
+<div class="gallery-content">
+<p>Discover one of the Europe's most iconic climbing destinations with stunning limestone cliffs, this 5-day adventure offers route for all skill levels and spectacular views.</p>
+<ul>
+<li>Climbine classic multi- pitch and sports route</li>
+<li> Daily Guided sessions with certified instructors</li>
+<li> Accomodation in a charming mountain lodge</li>
+<li>All technical climbing gear included</li>
+<li>Optional yoga sessions and canyon hikes.</li>
+</ul>
+
+
+<p><strong>Price:</strong>£1500 <span class="discount">Now £1200(20% off) </span></p>
+<a href="booking.html" class="book-button">Book Now </a> 
+</div>
+</div>
+<div class="gallery-item">
+<h3><span>Sailing</span></h3> <br>
+<img src="images/sailing.jpg" alt="sailing">
+<div class="gallery-content">
+<p>Ultimate Antractic Sailing Expedition(21 Days/ departure from France)
+Breathtaking Journey to the Untouched wilderness of Antartica combines extreme adventure, wildlife encounters, natural beauty and white continent.</p>
+<ul>
+<li>Depart from a French Port and sail across the Atlantic</li>
+<li>Stopovers at Cape Verde or the Falkland Islands(depending on route)</li>
+<li>Cross the Drake Passage Under full sail</li>
+<li>Land on the Antarctic Peninsula: hike glaciers, visit research stations, and kayak alongside iceberges.</li>
+<li>Spot penguins, seals, whales, and albatrosses</li>
+<li>Learn celestial navigation and polar survival skills on board</li>
+<li> Led by ecperienced French- speaking expedition crew</li>
+</ul>
+<p><strong>Price:</strong>£2500 <span class="discount">Now £1200(40% off) </span></p>
+<a href="booking.html" class="book-button">Book Now </a> 
+</div>
+</div>
+</div>
+</section>
+<!--packages activity ends here-->
+<!-- testimonials-->
+
+<h2>User testimonials</h2>
+<div class="testimonials-container">
+<div class="testimonials-box">
+<p>"The Paragliding Experience was super amazing! Highly recommended it</p>
+<div class="rating"> &starf;&starf;&starf;&starf;&star; </div>
+<p>John</p>
+</div>
+<div class="testimonials-box">
+<p>"The Base Jumping was scary, Won it with the help of instructor, Highly recommended it</p>
+<div class="rating"> &starf;&starf;&starf;&starf;&star; </div>
+<p>Rekha</p>
+</div>
+<div class="testimonials-box">
+<p>"We were well fed, well looked after and entertained with natures beauty for 5 days. Thanks for a fantastic introduction to ocean sailing. Time to look at booking another.</p>
+<div class="rating"> &starf;&starf;&starf;&starf;&star; </div>
+<p>Patrik</p>
+</div>
+<div class="testimonials-box">
+<p>"Instructor was great. Mixed climbing and teaching at great pace.Really great time and will definitely  do it again.</p>
+<div class="rating"> &starf;&starf;&starf;&starf;&star; </div>
+<p>Charles</p>
+</div>
+</div>
+
+<!--testimonial section ends here-->
+<!--Back to home Button-->
+<a href="homepage.html" class="btn">Go Back to home</a>
+
+
+<footer>
+    Adventure In france 2025
+</footer>
+     
+</body>
+
+</html>
